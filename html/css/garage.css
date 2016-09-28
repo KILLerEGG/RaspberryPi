@@ -1,0 +1,32 @@
+.li_div {
+  border-right: 1px solid #6699cc;
+}
+h1 {
+  font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
+}
+h2 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ul {
+  list-style-type: none;
+  width: 85%;
+  text-align: center;
+}
+ 
+h3 {
+  /*float: left;*/
+  vertical-align: middle;
+  font: bold 18px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  /*margin: 0 15px 0 0;*/
+}
+
+li {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  overflow: auto;
+  background: #eee;
+}

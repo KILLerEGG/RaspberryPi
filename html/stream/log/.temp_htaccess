@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Logs"
+AuthUserFile /etc/apache2/.htpasswd
+Require user gturbyne
+
+<Files "access.log">
+  Require user gturbyne
+</Files>

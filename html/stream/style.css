@@ -1,0 +1,82 @@
+body {
+    font:12px arial;
+    color: #222;
+    text-align:center;
+    padding-top:15px; 
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+}
+  
+form, p, span {
+    margin:0;
+    padding:0; }
+  
+input { font:12px arial; }
+  
+a {
+    color:#0000FF;
+    text-decoration:none; }
+  
+    a:hover { text-decoration:underline; }
+
+.container {
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+    /*margin-left:0;
+    margin-right:0;*/
+}
+
+#messageContainer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+  
+#wrapper, #loginform {
+    /*display: inline-block;*/
+    /*vertical-align:top;*/
+    margin:0 auto;
+    padding-bottom:25px;
+    background:#EBF4FB;
+    width:504px;
+    border:1px solid #ACD8F0; }
+  
+#loginform { 
+    /*padding-top:18px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+    #loginform p { margin: 5px; }
+  
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:215px;
+    width:400px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
+  
+#usermsg {
+    width:375px;
+    border:1px solid #ACD8F0; }
+  
+#submit { width: 60px; }
+  
+.error { color: #ff0000; }
+  
+#menu { padding:12.5px 25px 12.5px 25px; }
+  
+.welcome { float:left; }
+  
+.logout { float:right; }
+  
+.msgln { margin:0 0 2px 0; }
