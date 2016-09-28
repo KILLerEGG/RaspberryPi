@@ -1,0 +1,122 @@
+#:kivy 1.9.2
+
+<Movie>:
+
+<Controller>:
+    BoxLayout:
+        id: bl
+        orientation: 'vertical'
+        size: root.width, root.height
+        padding: 10, 10
+        row_default_height: '48dp'
+        row_force_default: True
+        spacing: 10, 10
+	
+        TabbedPanel:
+            id: tp_main
+            do_default_tab: False
+
+            TabbedPanelItem:
+                id: movies_tab
+                text: 'Movies'
+                TabbedPanel:
+                    id: mov_alph_tp
+                    do_default_tab: False
+                
+                    TabbedPanelItem:
+                        id: mov_all
+                        text: 'All'
+                        on_release: root.manager.current_screen.show_movies_all(mov_all_content)
+                  
+                        ScrollView:
+                            id: mov_all_sv
+                            size: self.size
+
+                            GridLayout:
+                                id: mov_all_content
+                                size_hint_y: None
+                                size: root.width, root.height - 20
+                                cols: 3
+                                row_default_width: 175
+                                row_default_height: 200
+                                row_force_default: True
+                    TabbedPanelItem:
+                        id: mov_a_g
+                        text: 'A - G'
+                        on_release: root.manager.current_screen.show_movies_a_g(mov_a_g_content)
+                  
+                        ScrollView:
+                            size: self.size
+
+                            GridLayout:
+                                id: mov_a_g_content
+                                size_hint_y: None
+                                size: root.width, root.height - 20
+                                cols: 3
+                                row_default_width: 175
+                                row_default_height: 200
+                                row_force_default: True
+                    TabbedPanelItem:
+                        id: mov_h_n 
+                        text: 'H - N'
+                        on_release: root.manager.current_screen.show_movies_h_n(mov_h_n_content)
+
+                        ScrollView:
+                            size: self.size
+
+                            GridLayout:
+                                id: mov_h_n_content
+                                size_hint_y: None
+                                size: root.width, root.height - 20
+                                cols: 3
+                                row_default_width: 175
+                                row_default_height: 200
+                                row_force_default: True
+                    TabbedPanelItem:
+                        id: mov_o_u 
+                        text: 'O - U'
+                        on_release: root.manager.current_screen.show_movies_o_u(mov_o_u_content)
+
+                        ScrollView:
+                            size: self.size
+
+                            GridLayout:
+                                id: mov_o_u_content
+                                size_hint_y: None
+                                size: root.width, root.height - 20
+                                cols: 3
+                                row_default_width: 175
+                                row_default_height: 200
+                                row_force_default: True
+                    TabbedPanelItem:
+                        id: mov_v_z 
+                        text: 'V - Z'
+                        on_release: root.manager.current_screen.show_movies_v_z(mov_v_z_content)
+
+                        ScrollView:
+                            size: self.size
+
+                            GridLayout:
+                                id: mov_v_z_content
+                                size_hint_y: None
+                                size: root.width, root.height - 20
+                                cols: 3
+                                row_default_width: 175
+                                row_default_height: 200
+                                row_force_default: True
+
+
+            TabbedPanelItem:
+                id: music_tab
+                text: 'Music'
+                on_release: root.manager.current_screen.show_music(music_content)
+                ScrollView:
+                    size: self.size
+	
+                    GridLayout:
+                        id: music_content
+                        size_hint_y: None
+                        size: root.width, root.height - 20
+                        cols: 3
+                        row_default_height: '20dp'
+                        row_force_default: True
